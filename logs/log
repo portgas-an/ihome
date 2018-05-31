@@ -1,0 +1,33 @@
+[D 180531 12:40:06 selector_events:65] Using selector: SelectSelector
+[I 180531 12:40:07 web:2106] 200 GET / (::1) 198.01ms
+[I 180531 12:40:07 web:2106] 200 GET /static/css/reset.css (::1) 78.82ms
+[I 180531 12:40:07 web:2106] 200 GET /static/plugins/swiper/css/swiper.min.css (::1) 67.19ms
+[I 180531 12:40:07 web:2106] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (::1) 56.47ms
+[I 180531 12:40:07 web:2106] 200 GET /static/css/ihome/main.css (::1) 40.95ms
+[I 180531 12:40:07 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (::1) 95.09ms
+[I 180531 12:40:07 web:2106] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (::1) 26.73ms
+[I 180531 12:40:07 web:2106] 200 GET /static/css/ihome/index.css (::1) 292.55ms
+[I 180531 12:40:07 web:2106] 200 GET /static/js/template.js (::1) 174.06ms
+[I 180531 12:40:07 web:2106] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (::1) 138.39ms
+[I 180531 12:40:07 web:2106] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (::1) 119.39ms
+[I 180531 12:40:07 web:2106] 200 GET /static/js/jquery.min.js (::1) 292.06ms
+[I 180531 12:40:07 web:2106] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (::1) 125.86ms
+[I 180531 12:40:07 web:2106] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (::1) 88.76ms
+[I 180531 12:40:07 web:2106] 200 GET /static/images/logo@128x59.png (::1) 33.48ms
+[I 180531 12:40:07 web:2106] 200 GET /static/js/ihome/index.js (::1) 27.19ms
+[I 180531 12:40:07 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (::1) 47.85ms
+[W 180531 12:40:07 web:2106] 404 GET /api/check_login (::1) 54.20ms
+[W 180531 12:40:07 web:2106] 404 GET /api/house/index (::1) 1.02ms
+[I 180531 12:40:07 web:2106] 200 GET /favicon.ico (::1) 4.39ms
+[I 180531 12:40:08 web:2106] 200 GET /register.html (::1) 8.04ms
+[I 180531 12:40:08 web:2106] 200 GET /static/css/ihome/register.css (::1) 32.44ms
+[I 180531 12:40:08 web:2106] 200 GET /static/js/ihome/register.js (::1) 24.60ms
+[I 180531 12:40:08 web:2106] 200 GET /api/imagecode?pcodeid=&codeid=80ec83e0-bb0a-4960-8d76-aef78907a2a5 (::1) 344.25ms
+[I 180531 12:40:12 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (::1) 10.53ms
+[I 180531 12:40:25 web:2106] 200 POST /api/smscode (::1) 0.99ms
+[E 180531 12:40:55 Passport:27] (1062, "Duplicate entry '18820789271' for key 'up_name'")
+[I 180531 12:40:55 web:2106] 200 POST /api/register (::1) 571.84ms
+[I 180531 12:43:36 autoreload:196] F:\torna\handlers\BaseHandler.py modified; restarting server
+[D 180531 12:43:37 selector_events:65] Using selector: SelectSelector
+[I 180531 12:51:30 autoreload:196] F:\torna\handlers\BaseHandler.py modified; restarting server
+[D 180531 12:51:31 selector_events:65] Using selector: SelectSelector
