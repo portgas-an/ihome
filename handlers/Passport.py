@@ -20,6 +20,7 @@ class RegisterHandler(BaseHandler):
             return self.write(dict(errcode="2", msg="验证码无效"))
         password = hashlib.sha256((config.passwd_hash_key + password).encode("utf8")).hexdigest()
         try:
+            # 会返回生成的主键
             res = self.db.execute("insert into ih_user_profile(up_name, up_mobile,up_passwd) "
                                   "values(%(name)s, %(mobile)s, %(passwd)s)",
                                  name=mobile, mobile=mobile, passwd=password)
@@ -43,9 +44,8 @@ class LoginHandler(BaseHandler):
         password = self.json_args.get("password")
         if not all((mobile, password)):
             return self.write(dict(errcode=RET.PARAMERR, msg=error_map.PARAMERR))
-        res = self.db.get("select up_user_id,up_name,up_passwd from ih_user_profile"
-                          "where up_mobile=%(mobile)s", mobile=mobile)
-        password = hashlib.sha256(config.passwd_hash_key+password).hexdigest()
+        res = self.db.get("select up_user_id,up_name,up_passwd from ih_user_profile where up_mobile=%(mobile)s", mobile=mobile)
+        password = hashlib.sha256((config.passwd_hash_key+password).encode("utf8")) .hexdigest()
         if res and res["up_passwd"] == password:
             try:
                 self.session = Session(self)
@@ -62,4 +62,8 @@ class LoginHandler(BaseHandler):
 
 class CheckLoginHandler(BaseHandler):
     """检查登陆状态"""
-
+    def get(self):
+        if self.get_current_user():
+            self.write(dict(errcode=RET.OK, msg="true", data={"name": self.session.data.get("name")}))
+        else:
+            self.write(dict(errcode=1, msg='false'))
