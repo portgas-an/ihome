@@ -31,4 +31,4 @@ class AvatarHandler(BaseHandler):
             logging.error(e)
             return self.write(dict(errcode=RET.DBERR, msg="upload failed"))
         image_url = "" + image_name
-        return self.write(dict(errcode=RET.OK, msg={"url": image_url}))
+        return self.write(dict(errcode=RET.OK, msg="OK", data=image_url))
