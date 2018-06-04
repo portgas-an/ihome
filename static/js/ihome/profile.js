@@ -18,6 +18,7 @@ $(document).ready(function () {
         }
         else if ("0" == data.errcode) {
             $("#user-name").val(data.data.name);
+            $("#user-mobile").val(data.data.mobile)
             if (data.data.avatar) {
                 $("#user-avatar").attr("src", data.data.avatar);
             }

@@ -6,8 +6,8 @@ import logging
 from qiniu import Auth, put_data, etag, urlsafe_base64_encode
 
 #需要填写你的 Access Key 和 Secret Key
-access_key = 'uzc59bVURbUbazey9vrexXKocNKBUN8NuLijk57N'
-secret_key = '-9lenw28jU2REojvGkcsEPWk5Nm9V2HIVqb5Nkts'
+access_key = 'rdWcd00BBpTfqUoCBtubQ0qslneEZJ2a9EojN0ly'
+secret_key = 'V6ZBR6pidep_30TByUccfzFOsNSn7GBERUnmcfoZ'
 
 def storage(file_data):
     try:

@@ -1,55 +1,30 @@
-[D 180531 13:29:58 selector_events:65] Using selector: SelectSelector
-[D 180531 13:30:16 selector_events:65] Using selector: SelectSelector
-[I 180531 13:30:18 web:2106] 304 GET /login.html (::1) 158.79ms
-[E 180531 13:30:24 web:1621] Uncaught exception POST /api/login (::1)
-    HTTPServerRequest(protocol='http', host='localhost:8080', method='POST', uri='/api/login', version='HTTP/1.1', remote_ip='::1')
-    Traceback (most recent call last):
-      File "D:\python\lib\site-packages\tornado\web.py", line 1541, in _execute
-        result = method(*self.path_args, **self.path_kwargs)
-      File "F:\torna\handlers\Passport.py", line 47, in post
-        password = hashlib.sha256(config.passwd_hash_key+password).hexdigest()
-    TypeError: Unicode-objects must be encoded before hashing
-[E 180531 13:30:24 web:2106] 500 POST /api/login (::1) 3.05ms
-[I 180531 13:32:26 autoreload:196] F:\torna\handlers\Passport.py modified; restarting server
-[D 180531 13:32:26 selector_events:65] Using selector: SelectSelector
-[I 180531 13:32:27 web:2106] 200 POST /api/login (::1) 3.99ms
-[W 180531 13:32:27 web:2106] 404 GET /api/check_login (::1) 2.00ms
-[W 180531 13:32:27 web:2106] 404 GET /api/house/index (::1) 2.01ms
-[W 180531 13:32:27 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.00ms
-[I 180531 13:39:28 autoreload:196] F:\torna\handlers\Passport.py modified; restarting server
-[D 180531 13:39:28 selector_events:65] Using selector: SelectSelector
-[I 180531 13:51:12 autoreload:196] F:\torna\handlers\Passport.py modified; restarting server
-[D 180531 13:51:13 selector_events:65] Using selector: SelectSelector
-[I 180531 14:01:25 web:2106] 304 GET / (::1) 142.11ms
-[W 180531 14:01:25 web:2106] 404 GET /api/check_login (::1) 1.99ms
-[W 180531 14:01:25 web:2106] 404 GET /api/house/index (::1) 2.99ms
-[W 180531 14:01:25 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 0.99ms
-[I 180531 14:20:26 autoreload:196] F:\torna\handlers\Passport.py modified; restarting server
-[D 180531 14:20:26 selector_events:65] Using selector: SelectSelector
-[I 180531 14:46:48 autoreload:196] F:\torna\handlers\Passport.py modified; restarting server
-[D 180531 14:58:42 selector_events:65] Using selector: SelectSelector
-[I 180531 14:58:47 web:2106] 304 GET / (::1) 140.69ms
-[I 180531 14:58:47 web:2106] 200 GET /api/check_login (::1) 1.00ms
-[W 180531 14:58:47 web:2106] 404 GET /api/house/index (::1) 5.00ms
-[W 180531 14:58:47 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 2.00ms
-[I 180531 14:59:07 web:2106] 200 POST /api/login (::1) 4.02ms
-[I 180531 14:59:07 web:2106] 200 GET /api/check_login (::1) 0.00ms
-[W 180531 14:59:07 web:2106] 404 GET /api/house/index (::1) 1.00ms
-[W 180531 14:59:07 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.00ms
-[D 180602 17:06:24 selector_events:65] Using selector: SelectSelector
-[I 180602 17:06:43 web:2106] 304 GET / (::1) 157.47ms
-[I 180602 17:06:43 web:2106] 304 GET /static/css/ihome/index.css (::1) 3.99ms
-[W 180602 17:06:43 web:2106] 404 GET /api/house/index (::1) 80.15ms
-[I 180602 17:06:43 web:2106] 200 GET /api/check_login (::1) 20.01ms
-[I 180602 17:06:51 web:2106] 200 POST /api/login (::1) 169.91ms
-[I 180602 17:06:51 web:2106] 200 GET /api/check_login (::1) 71.89ms
-[W 180602 17:06:51 web:2106] 404 GET /api/house/index (::1) 0.00ms
-[I 180602 17:06:52 web:2106] 200 GET /my.html (::1) 8.00ms
-[I 180602 17:06:52 web:2106] 200 GET /static/css/ihome/my.css (::1) 16.01ms
-[I 180602 17:06:52 web:2106] 200 GET /static/js/ihome/my.js (::1) 7.98ms
-[W 180602 17:06:52 web:2106] 404 GET /api/profile (::1) 0.00ms
-[I 180602 17:06:56 web:2106] 200 GET /profile.html (::1) 3.97ms
-[I 180602 17:06:56 web:2106] 200 GET /static/js/jquery.form.min.js (::1) 43.92ms
-[I 180602 17:06:56 web:2106] 200 GET /static/css/ihome/profile.css (::1) 23.95ms
-[I 180602 17:06:56 web:2106] 200 GET /static/js/ihome/profile.js (::1) 15.94ms
-[W 180602 17:06:56 web:2106] 404 GET /api/profile (::1) 0.00ms
+[D 180604 13:59:16 selector_events:65] Using selector: SelectSelector
+[I 180604 13:59:19 web:2106] 304 GET /profile.html (::1) 122.70ms
+
+[I 180604 15:43:18 web:2106] 200 GET /api/house/area (::1) 3.02ms
+[I 180604 15:48:29 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180604 15:48:29 selector_events:65] Using selector: SelectSelector
+[I 180604 15:48:42 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180604 15:48:42 selector_events:65] Using selector: SelectSelector
+[I 180604 15:48:44 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180604 15:48:44 selector_events:65] Using selector: SelectSelector
+[I 180604 15:49:01 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180604 15:49:01 selector_events:65] Using selector: SelectSelector
+[I 180604 15:49:14 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180604 15:49:14 selector_events:65] Using selector: SelectSelector
+[I 180604 15:49:23 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180604 15:49:24 selector_events:65] Using selector: SelectSelector
+[I 180604 15:49:30 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180604 15:49:30 selector_events:65] Using selector: SelectSelector
+[I 180604 15:50:21 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180604 15:50:22 selector_events:65] Using selector: SelectSelector
+[I 180604 15:51:03 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180604 15:53:46 selector_events:65] Using selector: SelectSelector
+[I 180604 15:53:51 web:2106] 304 GET /newhouse.html (::1) 171.12ms
+[D 180604 15:53:51 House:19] b'[{"area_id": 1, "name": "\\u4e1c\\u57ce\\u533a"}, {"area_id": 2, "name": "\\u897f\\u57ce\\u533a"}, {"area_id": 3, "name": "\\u671d\\u9633\\u533a"}, {"area_id": 4, "name": "\\u6d77\\u6dc0\\u533a"}, {"area_id": 5, "name": "\\u660c\\u5e73\\u533a"}, {"area_id": 6, "name": "\\u4e30\\u53f0\\u533a"}, {"area_id": 7, "name": "\\u623f\\u5c71\\u533a"}, {"area_id": 8, "name": "\\u901a\\u5dde\\u533a"}, {"area_id": 9, "name": "\\u987a\\u4e49\\u533a"}, {"area_id": 10, "name": "\\u5927\\u5174\\u533a"}, {"area_id": 11, "name": "\\u6000\\u67d4\\u533a"}, {"area_id": 12, "name": "\\u5e73\\u8c37\\u533a"}, {"area_id": 13, "name": "\\u5bc6\\u4e91\\u533a"}, {"area_id": 14, "name": "\\u5ef6\\u5e86\\u533a"}, {"area_id": 15, "name": "\\u77f3\\u666f\\u5c71\\u533a"}, {"area_id": 16, "name": "\\u95e8\\u5934\\u6c9f\\u533a"}]'
+[I 180604 15:53:51 web:2106] 200 GET /api/house/area (::1) 2.00ms
+[I 180604 15:54:43 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180604 15:54:43 selector_events:65] Using selector: SelectSelector
+[I 180604 15:54:44 web:2106] 304 GET /newhouse.html (::1) 202.06ms
+[D 180604 15:54:44 House:19] [{"area_id": 1, "name": "\u4e1c\u57ce\u533a"}, {"area_id": 2, "name": "\u897f\u57ce\u533a"}, {"area_id": 3, "name": "\u671d\u9633\u533a"}, {"area_id": 4, "name": "\u6d77\u6dc0\u533a"}, {"area_id": 5, "name": "\u660c\u5e73\u533a"}, {"area_id": 6, "name": "\u4e30\u53f0\u533a"}, {"area_id": 7, "name": "\u623f\u5c71\u533a"}, {"area_id": 8, "name": "\u901a\u5dde\u533a"}, {"area_id": 9, "name": "\u987a\u4e49\u533a"}, {"area_id": 10, "name": "\u5927\u5174\u533a"}, {"area_id": 11, "name": "\u6000\u67d4\u533a"}, {"area_id": 12, "name": "\u5e73\u8c37\u533a"}, {"area_id": 13, "name": "\u5bc6\u4e91\u533a"}, {"area_id": 14, "name": "\u5ef6\u5e86\u533a"}, {"area_id": 15, "name": "\u77f3\u666f\u5c71\u533a"}, {"area_id": 16, "name": "\u95e8\u5934\u6c9f\u533a"}]
+[I 180604 15:54:44 web:2106] 200 GET /api/house/area (::1) 2.04ms
