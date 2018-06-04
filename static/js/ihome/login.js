@@ -33,7 +33,7 @@ $(document).ready(function() {
             data: jsonData,
             contentType: "application/json",
             dataType: "json",
-            headers:{
+            headers:{submit
                 "X-XSRFTOKEN":getCookie("_xsrf"),
             },
             success: function (data) {

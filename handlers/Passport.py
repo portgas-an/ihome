@@ -6,6 +6,7 @@ from utils.response_code import RET, error_map
 import hashlib
 import config
 from utils.session import Session
+from utils.commons import required_login
 
 
 class RegisterHandler(BaseHandler):
@@ -58,6 +59,13 @@ class LoginHandler(BaseHandler):
             return self.write(dict(errcode=RET.OK, msg="OK"))
         else:
             return self.write(dict(errcode='2', msg="手机号或密码错误"))
+
+
+class OutHandler(BaseHandler):
+    @required_login
+    def get(self):
+        self.session.clear()
+        self.write(dict(errcode=RET.OK, msg="OK"))
 
 
 class CheckLoginHandler(BaseHandler):
