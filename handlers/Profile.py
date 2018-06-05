@@ -64,3 +64,37 @@ class NameHandler(BaseHandler):
             logging.error(e)
             return self.write(dict(errcode=RET.DBERR, msg="upload failed"))
         return self.write(dict(errcode=RET.OK, msg="OK"))
+
+
+class AuthHandler(BaseHandler):
+    """实名认证"""
+    @required_login
+    def get(self):
+        user_id = self.session.data["user_id"]
+        try:
+            ret = self.db.get("select up_real_name,up_id_card from ih_user_profile where up_user_id=%(user_id)s",
+                              user_id=user_id)
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errcode=RET.DBERR, msg="查询数据库出错"))
+        real_name = ret["up_real_name"]
+        id_card = ret["up_id_card"]
+        data = {}
+        if real_name:
+            data["real_name"] = real_name
+        if id_card:
+            data["id_card"] = id_card
+        return self.write(dict(errcode=RET.OK, msg="OK", data=data))
+
+    @required_login
+    def post(self):
+        user_id = self.session.data["user_id"]
+        real_name = self.json_args.get("real_name")
+        id_card = self.json_args.get("id_card")
+        try:
+            ret = self.db.execute("update ih_user_profile set up_real_name=%s,up_id_card=%s where up_user_id=%s",
+                                  real_name, id_card, user_id)
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errcode=RET.DBERR, msg="upload failed"))
+        return self.write(dict(errcode=RET.OK, msg="OK"))

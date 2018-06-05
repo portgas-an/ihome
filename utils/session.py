@@ -32,7 +32,7 @@ class Session(object):
             if not json_data:
                 self.data = {}
             else:
-                self.data = json.loads(json_data)
+                self.data = json.loads(json_data.decode('utf-8'))
 
     def save(self):
         json_data = json.dumps(self.data)
