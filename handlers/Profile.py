@@ -18,10 +18,11 @@ class Profile(BaseHandler):
             logging.error(e)
             self.write(dict(errcode=RET.DBERR, msg="查询数据库出错"))
         name = ret["up_name"]
-        avatar = config.qiniu_url + ret["up_avatar"]
-        mobile = ret["up_mobile"]
-        if not avatar:
+        if not ret["up_avatar"]:
             avatar = "http://img4.imgtn.bdimg.com/it/u=16550438,2220103346&fm=27&gp=0.jpg"
+        else:
+            avatar = config.qiniu_url + ret["up_avatar"]
+        mobile = ret["up_mobile"]
         self.write(dict(errcode=RET.OK, msg="OK", data={"name": name, "avatar": avatar, "mobile": mobile}))
 
 
@@ -60,6 +61,40 @@ class NameHandler(BaseHandler):
         name = self.json_args.get("name")
         try:
             ret = self.db.execute("update ih_user_profile set up_name=%s where up_user_id=%s", name, user_id)
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errcode=RET.DBERR, msg="upload failed"))
+        return self.write(dict(errcode=RET.OK, msg="OK"))
+
+
+class AuthHandler(BaseHandler):
+    """实名认证"""
+    @required_login
+    def get(self):
+        user_id = self.session.data["user_id"]
+        try:
+            ret = self.db.get("select up_real_name,up_id_card from ih_user_profile where up_user_id=%(user_id)s",
+                              user_id=user_id)
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errcode=RET.DBERR, msg="查询数据库出错"))
+        real_name = ret["up_real_name"]
+        id_card = ret["up_id_card"]
+        data = {}
+        if real_name:
+            data["real_name"] = real_name
+        if id_card:
+            data["id_card"] = id_card
+        return self.write(dict(errcode=RET.OK, msg="OK", data=data))
+
+    @required_login
+    def post(self):
+        user_id = self.session.data["user_id"]
+        real_name = self.json_args.get("real_name")
+        id_card = self.json_args.get("id_card")
+        try:
+            ret = self.db.execute("update ih_user_profile set up_real_name=%s,up_id_card=%s where up_user_id=%s",
+                                  real_name, id_card, user_id)
         except Exception as e:
             logging.error(e)
             return self.write(dict(errcode=RET.DBERR, msg="upload failed"))

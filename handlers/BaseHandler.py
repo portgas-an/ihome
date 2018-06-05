@@ -35,7 +35,7 @@ class BaseHandler(RequestHandler):
 
     def get_current_user(self):
         self.session = Session(self)
-        return self.session
+        return self.session.data
 
 
 class StaticFileHandler(StaticFileHandler):

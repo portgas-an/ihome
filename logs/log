@@ -1,212 +1,59 @@
-[D 180604 23:30:14 selector_events:65] Using selector: EpollSelector
-[D 180604 23:39:37 selector_events:65] Using selector: EpollSelector
-[I 180604 23:39:42 web:2106] 200 GET /api/check_login (::1) 1.98ms
-[W 180604 23:39:42 web:2106] 404 GET /api/house/index (::1) 4.59ms
-[W 180604 23:39:42 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 5.01ms
-[I 180604 23:46:41 autoreload:196] /home/ace/PycharmProjects/ihome/urls.py modified; restarting server
-[D 180604 23:46:42 selector_events:65] Using selector: EpollSelector
-[I 180604 23:46:44 web:2106] 304 GET /login.html?mobile=18820789271&password=123456 (::1) 6.31ms
-[I 180604 23:46:44 web:2106] 304 GET /static/js/ihome/login.js (::1) 1.29ms
-[I 180604 23:46:45 web:2106] 304 GET /login.html?mobile=18820789271&password=123456 (::1) 1.84ms
-[I 180604 23:46:57 web:2106] 200 GET /api/check_login (::1) 2.47ms
-[W 180604 23:46:57 web:2106] 404 GET /api/house/index (::1) 7.38ms
-[W 180604 23:46:57 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.26ms
-[I 180604 23:48:01 autoreload:196] /home/ace/PycharmProjects/ihome/urls.py modified; restarting server
-[D 180604 23:48:01 selector_events:65] Using selector: EpollSelector
-[D 180604 23:49:39 selector_events:65] Using selector: EpollSelector
-[I 180604 23:50:07 web:2106] 200 GET /api/check_login (::1) 15.96ms
-[W 180604 23:50:07 web:2106] 404 GET /api/house/index (::1) 6.96ms
-[W 180604 23:50:07 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 2.39ms
-[I 180604 23:50:15 web:2106] 200 GET /static/js/ihome/login.js (::1) 12.65ms
-[I 180604 23:50:24 web:2106] 304 GET /static/js/ihome/login.js (::1) 2.49ms
-[I 180604 23:52:26 web:2106] 200 GET /login.html?mobile=111111&password=11111 (::1) 1.72ms
-[I 180604 23:52:26 web:2106] 200 GET /static/js/ihome/login.js (::1) 1.07ms
-[I 180604 23:53:07 web:2106] 304 GET /static/js/ihome/login.js (::1) 2.26ms
-[I 180604 23:53:40 web:2106] 304 GET /login.html?mobile=111111&password=11111 (::1) 1.02ms
-[I 180604 23:53:40 web:2106] 304 GET /static/js/ihome/login.js (::1) 2.46ms
-[I 180604 23:53:49 web:2106] 200 GET /login.html?mobile=1234576&password=123456 (::1) 2.87ms
-[I 180604 23:55:20 web:2106] 304 GET /login.html?mobile=1234576&password=123456 (::1) 0.93ms
-[I 180604 23:55:21 web:2106] 200 GET /static/js/ihome/login.js (::1) 2.25ms
-[I 180604 23:55:32 web:2106] 200 GET /login.html?mobile=123456&password=123446 (::1) 1.35ms
-[I 180604 23:55:32 web:2106] 304 GET /static/js/ihome/login.js (::1) 1.27ms
-[I 180604 23:56:02 web:2106] 304 GET /login.html?mobile=123456&password=123446 (::1) 0.92ms
-[I 180604 23:56:02 web:2106] 200 GET /static/js/ihome/login.js (::1) 3.04ms
-[D 180604 23:57:57 selector_events:65] Using selector: EpollSelector
-[I 180604 23:58:06 web:2106] 200 GET /api/check_login (::1) 3.93ms
-[W 180604 23:58:06 web:2106] 404 GET /api/house/index (::1) 2.52ms
-[W 180604 23:58:06 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 3.00ms
-[I 180604 23:58:10 web:2106] 304 GET /static/js/ihome/login.js (::1) 12.16ms
-[I 180605 00:03:19 web:2106] 304 GET /login.html (::1) 1.59ms
-[I 180605 00:03:19 web:2106] 200 GET /static/js/ihome/login.js (::1) 2.06ms
-[E 180605 00:03:36 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:03:36 Passport:58] 'NoneType' object has no attribute 'decode'
-[I 180605 00:03:36 web:2106] 200 POST /api/login (::1) 8.28ms
-[E 180605 00:03:37 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:03:37 web:1621] Uncaught exception GET /api/check_login (::1)
+[D 180605 22:34:30 selector_events:65] Using selector: EpollSelector
+[I 180605 22:35:01 web:2106] 304 GET / (::1) 106.00ms
+[I 180605 22:35:01 web:2106] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (::1) 45.19ms
+[I 180605 22:35:01 web:2106] 304 GET /static/css/ihome/main.css (::1) 47.90ms
+[I 180605 22:35:01 web:2106] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (::1) 49.27ms
+[I 180605 22:35:01 web:2106] 304 GET /static/plugins/swiper/css/swiper.min.css (::1) 26.22ms
+[I 180605 22:35:01 web:2106] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (::1) 21.38ms
+[I 180605 22:35:01 web:2106] 304 GET /static/css/reset.css (::1) 12.46ms
+[I 180605 22:35:01 web:2106] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (::1) 1.13ms
+[I 180605 22:35:01 web:2106] 304 GET /static/images/logo@128x59.png (::1) 1.31ms
+[I 180605 22:35:01 web:2106] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (::1) 13.31ms
+[I 180605 22:35:01 web:2106] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (::1) 23.94ms
+[I 180605 22:35:01 web:2106] 304 GET /static/css/ihome/index.css (::1) 22.28ms
+[I 180605 22:35:01 web:2106] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (::1) 110.99ms
+[I 180605 22:35:02 web:2106] 304 GET /static/js/ihome/index.js (::1) 22.07ms
+[I 180605 22:35:02 web:2106] 304 GET /static/js/jquery.min.js (::1) 103.84ms
+[I 180605 22:35:02 web:2106] 304 GET /static/js/template.js (::1) 12.54ms
+[W 180605 22:35:02 web:2106] 404 GET /api/house/index (::1) 75.80ms
+[E 180605 22:35:02 session:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 180605 22:35:02 web:1621] Uncaught exception GET /api/check_login (::1)
     HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='::1')
     Traceback (most recent call last):
-      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
-        result = method(*self.path_args, **self.path_kwargs)
-      File "/home/ace/PycharmProjects/ihome/handlers/Passport.py", line 74, in get
-        if self.get_current_user():
-      File "/home/ace/PycharmProjects/ihome/handlers/BaseHandler.py", line 37, in get_current_user
-        self.session = Session(self)
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 31, in __init__
-        raise e
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 28, in __init__
-        json_data = request_handler_obj.redis.get("sess_%s" % self.session_id).decode('utf-8')
-    AttributeError: 'NoneType' object has no attribute 'decode'
-[E 180605 00:03:37 web:2106] 500 GET /api/check_login (::1) 7.39ms
-[W 180605 00:03:37 web:2106] 404 GET /api/house/index (::1) 5.67ms
-[W 180605 00:03:37 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.85ms
-[I 180605 00:07:55 web:2106] 304 GET /static/js/ihome/login.js (::1) 0.99ms
-[W 180605 00:08:09 web:1618] 403 POST /api/login (::1): '_xsrf' argument missing from POST
-[W 180605 00:08:09 web:2106] 403 POST /api/login (::1) 2.58ms
-[W 180605 00:09:20 web:1618] 403 POST /api/login (::1): '_xsrf' argument missing from POST
-[W 180605 00:09:20 web:2106] 403 POST /api/login (::1) 1.68ms
-[I 180605 00:09:37 web:2106] 200 GET /api/check_login (::1) 1.67ms
-[W 180605 00:09:37 web:2106] 404 GET /api/house/index (::1) 1.67ms
-[W 180605 00:09:37 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.87ms
-[I 180605 00:09:44 web:2106] 304 GET /static/js/ihome/login.js (::1) 1.12ms
-[E 180605 00:09:53 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:09:53 Passport:58] 'NoneType' object has no attribute 'decode'
-[I 180605 00:09:53 web:2106] 200 POST /api/login (::1) 5.22ms
-[E 180605 00:09:53 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:09:53 web:1621] Uncaught exception GET /api/check_login (::1)
-    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='::1')
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 484, in connect
+        sock = self._connect()
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 541, in _connect
+        raise err
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 529, in _connect
+        sock.connect(socket_address)
+    ConnectionRefusedError: [Errno 111] Connection refused
+    
+    During handling of the above exception, another exception occurred:
+    
     Traceback (most recent call last):
-      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
-        result = method(*self.path_args, **self.path_kwargs)
-      File "/home/ace/PycharmProjects/ihome/handlers/Passport.py", line 74, in get
-        if self.get_current_user():
-      File "/home/ace/PycharmProjects/ihome/handlers/BaseHandler.py", line 37, in get_current_user
-        self.session = Session(self)
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 31, in __init__
-        raise e
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 28, in __init__
-        json_data = request_handler_obj.redis.get("sess_%s" % self.session_id).decode('utf-8')
-    AttributeError: 'NoneType' object has no attribute 'decode'
-[E 180605 00:09:53 web:2106] 500 GET /api/check_login (::1) 6.71ms
-[W 180605 00:09:53 web:2106] 404 GET /api/house/index (::1) 4.55ms
-[W 180605 00:09:53 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 2.00ms
-[I 180605 00:14:53 web:2106] 304 GET / (::1) 1.98ms
-[I 180605 00:14:53 web:2106] 200 GET /api/check_login (::1) 1.51ms
-[W 180605 00:14:53 web:2106] 404 GET /api/house/index (::1) 2.20ms
-[W 180605 00:14:53 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 0.96ms
-[D 180605 00:18:56 selector_events:65] Using selector: EpollSelector
-[D 180605 00:19:08 selector_events:65] Using selector: EpollSelector
-[I 180605 00:19:17 web:2106] 304 GET / (::1) 12.62ms
-[E 180605 00:19:17 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:19:17 web:1621] Uncaught exception GET /api/check_login (::1)
-    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='::1')
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/client.py", line 667, in execute_command
+        connection.send_command(*args)
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 610, in send_command
+        self.send_packed_command(self.pack_command(*args))
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 585, in send_packed_command
+        self.connect()
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 489, in connect
+        raise ConnectionError(self._error_message(e))
+    redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+    
+    During handling of the above exception, another exception occurred:
+    
     Traceback (most recent call last):
-      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
-        result = method(*self.path_args, **self.path_kwargs)
-      File "/home/ace/PycharmProjects/ihome/handlers/Passport.py", line 74, in get
-        if self.get_current_user():
-      File "/home/ace/PycharmProjects/ihome/handlers/BaseHandler.py", line 37, in get_current_user
-        self.session = Session(self)
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 31, in __init__
-        raise e
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 28, in __init__
-        json_data = request_handler_obj.redis.get("sess_%s" % self.session_id).decode('utf-8')
-    AttributeError: 'NoneType' object has no attribute 'decode'
-[E 180605 00:19:17 web:2106] 500 GET /api/check_login (::1) 10.64ms
-[W 180605 00:19:17 web:2106] 404 GET /api/house/index (::1) 4.14ms
-[W 180605 00:19:17 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 8.45ms
-[I 180605 00:19:24 web:2106] 304 GET / (::1) 3.82ms
-[I 180605 00:19:24 web:2106] 200 GET /api/check_login (::1) 4.43ms
-[W 180605 00:19:24 web:2106] 404 GET /api/house/index (::1) 8.19ms
-[W 180605 00:19:24 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 4.04ms
-[I 180605 00:19:26 web:2106] 304 GET /static/js/ihome/login.js (::1) 5.90ms
-[E 180605 00:19:32 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:19:32 Passport:58] 'NoneType' object has no attribute 'decode'
-[I 180605 00:19:32 web:2106] 200 POST /api/login (::1) 6.16ms
-[E 180605 00:19:33 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:19:33 web:1621] Uncaught exception GET /api/check_login (::1)
-    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='::1')
-    Traceback (most recent call last):
-      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
-        result = method(*self.path_args, **self.path_kwargs)
-      File "/home/ace/PycharmProjects/ihome/handlers/Passport.py", line 74, in get
-        if self.get_current_user():
-      File "/home/ace/PycharmProjects/ihome/handlers/BaseHandler.py", line 37, in get_current_user
-        self.session = Session(self)
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 31, in __init__
-        raise e
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 28, in __init__
-        json_data = request_handler_obj.redis.get("sess_%s" % self.session_id).decode('utf-8')
-    AttributeError: 'NoneType' object has no attribute 'decode'
-[E 180605 00:19:33 web:2106] 500 GET /api/check_login (::1) 6.51ms
-[W 180605 00:19:33 web:2106] 404 GET /api/house/index (::1) 4.94ms
-[W 180605 00:19:33 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 5.51ms
-[D 180605 00:20:17 selector_events:65] Using selector: EpollSelector
-[I 180605 00:20:26 web:2106] 304 GET / (::1) 10.75ms
-[I 180605 00:20:26 web:2106] 200 GET /api/check_login (::1) 5.86ms
-[W 180605 00:20:26 web:2106] 404 GET /api/house/index (::1) 17.62ms
-[W 180605 00:20:26 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 4.53ms
-[E 180605 00:20:34 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:20:34 Passport:58] 'NoneType' object has no attribute 'decode'
-[I 180605 00:20:34 web:2106] 200 POST /api/login (::1) 8.24ms
-[E 180605 00:20:34 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:20:34 web:1621] Uncaught exception GET /api/check_login (::1)
-    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='::1')
-    Traceback (most recent call last):
-      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
-        result = method(*self.path_args, **self.path_kwargs)
-      File "/home/ace/PycharmProjects/ihome/handlers/Passport.py", line 74, in get
-        if self.get_current_user():
-      File "/home/ace/PycharmProjects/ihome/handlers/BaseHandler.py", line 37, in get_current_user
-        self.session = Session(self)
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 31, in __init__
-        raise e
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 28, in __init__
-        json_data = request_handler_obj.redis.get("sess_%s" % self.session_id).decode('utf-8')
-    AttributeError: 'NoneType' object has no attribute 'decode'
-[E 180605 00:20:34 web:2106] 500 GET /api/check_login (::1) 20.98ms
-[W 180605 00:20:34 web:2106] 404 GET /api/house/index (::1) 5.69ms
-[W 180605 00:20:34 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 2.84ms
-[I 180605 00:20:57 web:2106] 304 GET / (::1) 6.84ms
-[I 180605 00:20:57 web:2106] 200 GET /api/check_login (::1) 11.64ms
-[W 180605 00:20:57 web:2106] 404 GET /api/house/index (::1) 5.94ms
-[W 180605 00:20:57 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 4.09ms
-[E 180605 00:21:21 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:21:25 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:21:43 Passport:58] 'NoneType' object has no attribute 'decode'
-[I 180605 00:21:43 web:2106] 200 POST /api/login (::1) 37197.31ms
-[E 180605 00:21:43 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:21:43 web:1621] Uncaught exception GET /api/check_login (::1)
-    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='::1')
-    Traceback (most recent call last):
-      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
-        result = method(*self.path_args, **self.path_kwargs)
-      File "/home/ace/PycharmProjects/ihome/handlers/Passport.py", line 74, in get
-        if self.get_current_user():
-      File "/home/ace/PycharmProjects/ihome/handlers/BaseHandler.py", line 37, in get_current_user
-        self.session = Session(self)
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 31, in __init__
-        raise e
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 28, in __init__
-        json_data = request_handler_obj.redis.get("sess_%s" % self.session_id).decode('utf-8')
-    AttributeError: 'NoneType' object has no attribute 'decode'
-[E 180605 00:21:43 web:2106] 500 GET /api/check_login (::1) 8.63ms
-[W 180605 00:21:43 web:2106] 404 GET /api/house/index (::1) 13.34ms
-[W 180605 00:21:43 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 4.63ms
-[I 180605 00:23:18 autoreload:196] /home/ace/PycharmProjects/ihome/handlers/Passport.py modified; restarting server
-[D 180605 00:23:33 selector_events:65] Using selector: EpollSelector
-[I 180605 00:23:39 web:2106] 304 GET /login.html (::1) 11.17ms
-[I 180605 00:23:39 web:2106] 304 GET /static/js/ihome/login.js (::1) 3.99ms
-[I 180605 00:23:47 web:2106] 200 GET /api/check_login (::1) 10.36ms
-[W 180605 00:23:47 web:2106] 404 GET /api/house/index (::1) 9.32ms
-[W 180605 00:23:47 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 4.30ms
-[E 180605 00:24:21 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:24:44 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:24:44 Passport:58] 'NoneType' object has no attribute 'decode'
-[I 180605 00:24:44 web:2106] 200 POST /api/login (::1) 48037.36ms
-[D 180605 00:30:17 selector_events:65] Using selector: EpollSelector
-[E 180605 00:30:22 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:30:22 web:1621] Uncaught exception GET /api/check_login (::1)
-    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='::1')
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 484, in connect
+        sock = self._connect()
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 541, in _connect
+        raise err
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 529, in _connect
+        sock.connect(socket_address)
+    ConnectionRefusedError: [Errno 111] Connection refused
+    
+    During handling of the above exception, another exception occurred:
+    
     Traceback (most recent call last):
       File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
         result = method(*self.path_args, **self.path_kwargs)
@@ -218,32 +65,277 @@
         raise e
       File "/home/ace/PycharmProjects/ihome/utils/session.py", line 28, in __init__
         json_data = request_handler_obj.redis.get("sess_%s" % self.session_id).decode('utf-8')
-    AttributeError: 'NoneType' object has no attribute 'decode'
-[E 180605 00:30:22 web:2106] 500 GET /api/check_login (::1) 7.73ms
-[W 180605 00:30:22 web:2106] 404 GET /api/house/index (::1) 2.43ms
-[W 180605 00:30:22 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.49ms
-[I 180605 00:30:23 web:2106] 304 GET /register.html (::1) 14.41ms
-[I 180605 00:30:23 web:2106] 304 GET /static/css/ihome/register.css (::1) 3.61ms
-[I 180605 00:30:23 web:2106] 304 GET /static/js/ihome/register.js (::1) 1.49ms
-[I 180605 00:30:24 web:2106] 200 GET /api/imagecode?pcodeid=&codeid=7f7c516e-fbc2-41c0-8037-4a0b6681cb5c (::1) 250.19ms
-[E 180605 00:30:48 session:30] 'NoneType' object has no attribute 'decode'
-[E 180605 00:30:48 web:1621] Uncaught exception GET /api/check_login (::1)
-    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='::1')
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/client.py", line 976, in get
+        return self.execute_command('GET', name)
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/client.py", line 673, in execute_command
+        connection.send_command(*args)
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 610, in send_command
+        self.send_packed_command(self.pack_command(*args))
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 585, in send_packed_command
+        self.connect()
+      File "/home/ace/.local/lib/python3.5/site-packages/redis/connection.py", line 489, in connect
+        raise ConnectionError(self._error_message(e))
+    redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 180605 22:35:02 web:2106] 500 GET /api/check_login (::1) 25.62ms
+[I 180605 22:35:04 web:2106] 304 GET /login.html (::1) 1.99ms
+[I 180605 22:35:04 web:2106] 304 GET /static/css/ihome/login.css (::1) 15.75ms
+[I 180605 22:35:04 web:2106] 304 GET /static/js/ihome/login.js (::1) 10.58ms
+[E 180605 22:35:12 session:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 180605 22:35:12 Passport:58] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 180605 22:35:12 web:2106] 200 POST /api/login (::1) 7.83ms
+[I 180605 22:35:16 web:2106] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (::1) 14.68ms
+[E 180605 22:35:17 session:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 180605 22:35:17 Passport:58] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 180605 22:35:17 web:2106] 200 POST /api/login (::1) 3.78ms
+[E 180605 22:35:53 session:30] 'NoneType' object has no attribute 'decode'
+[E 180605 22:35:53 Passport:58] 'NoneType' object has no attribute 'decode'
+[I 180605 22:35:53 web:2106] 200 POST /api/login (::1) 6.92ms
+[E 180605 22:35:56 session:30] 'NoneType' object has no attribute 'decode'
+[E 180605 22:35:56 Passport:58] 'NoneType' object has no attribute 'decode'
+[I 180605 22:35:56 web:2106] 200 POST /api/login (::1) 4.62ms
+[I 180605 22:35:59 web:2106] 304 GET /login.html (::1) 1.61ms
+[I 180605 22:35:59 web:2106] 304 GET /login.html (::1) 6.73ms
+[E 180605 22:36:05 session:30] 'NoneType' object has no attribute 'decode'
+[E 180605 22:36:05 Passport:58] 'NoneType' object has no attribute 'decode'
+[I 180605 22:36:05 web:2106] 200 POST /api/login (::1) 2.61ms
+[I 180605 22:36:14 web:2106] 200 GET /api/check_login (::1) 2.37ms
+[W 180605 22:36:14 web:2106] 404 GET /api/house/index (::1) 3.09ms
+[W 180605 22:36:14 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.46ms
+[E 180605 22:36:23 session:30] 'NoneType' object has no attribute 'decode'
+[E 180605 22:36:23 Passport:58] 'NoneType' object has no attribute 'decode'
+[I 180605 22:36:23 web:2106] 200 POST /api/login (::1) 3.57ms
+[E 180605 22:37:10 session:30] 'NoneType' object has no attribute 'decode'
+[E 180605 22:37:10 Passport:58] 'NoneType' object has no attribute 'decode'
+[I 180605 22:37:10 web:2106] 200 POST /api/login (::1) 3.86ms
+[I 180605 22:40:57 autoreload:196] /home/ace/PycharmProjects/ihome/utils/session.py modified; restarting server
+[D 180605 22:40:57 selector_events:65] Using selector: EpollSelector
+[I 180605 22:42:48 autoreload:196] /home/ace/PycharmProjects/ihome/handlers/Passport.py modified; restarting server
+[D 180605 22:42:48 selector_events:65] Using selector: EpollSelector
+[I 180605 22:42:52 web:2106] 200 GET /api/check_login (::1) 6.53ms
+[W 180605 22:42:52 web:2106] 404 GET /api/house/index (::1) 3.84ms
+[W 180605 22:42:52 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.42ms
+[I 180605 22:43:24 autoreload:196] /home/ace/PycharmProjects/ihome/handlers/Passport.py modified; restarting server
+[D 180605 22:43:25 selector_events:65] Using selector: EpollSelector
+[D 180605 23:03:00 selector_events:65] Using selector: EpollSelector
+[D 180605 23:03:02 selector_events:65] Using selector: EpollSelector
+[I 180605 23:03:13 web:2106] 304 GET / (::1) 7.61ms
+[I 180605 23:03:13 web:2106] 200 GET /api/check_login (::1) 2.35ms
+[W 180605 23:03:13 web:2106] 404 GET /api/house/index (::1) 3.12ms
+[W 180605 23:03:13 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.58ms
+[I 180605 23:03:24 web:2106] 200 POST /api/login (::1) 5.60ms
+[I 180605 23:03:24 web:2106] 200 GET /api/check_login (::1) 1.32ms
+[W 180605 23:03:24 web:2106] 404 GET /api/house/index (::1) 1.61ms
+[W 180605 23:03:24 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.59ms
+[W 180605 23:03:56 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.30ms
+[I 180605 23:04:22 web:2106] 304 GET /my.html (::1) 8.63ms
+[I 180605 23:04:22 web:2106] 304 GET /static/js/ihome/my.js (::1) 2.55ms
+[I 180605 23:04:22 web:2106] 304 GET /static/css/ihome/my.css (::1) 2.84ms
+[E 180605 23:04:22 web:1621] Uncaught exception GET /api/profile (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='::1')
     Traceback (most recent call last):
       File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
         result = method(*self.path_args, **self.path_kwargs)
-      File "/home/ace/PycharmProjects/ihome/handlers/Passport.py", line 75, in get
-        if self.get_current_user():
-      File "/home/ace/PycharmProjects/ihome/handlers/BaseHandler.py", line 37, in get_current_user
-        self.session = Session(self)
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 31, in __init__
-        raise e
-      File "/home/ace/PycharmProjects/ihome/utils/session.py", line 28, in __init__
-        json_data = request_handler_obj.redis.get("sess_%s" % self.session_id).decode('utf-8')
-    AttributeError: 'NoneType' object has no attribute 'decode'
-[E 180605 00:30:48 web:2106] 500 GET /api/check_login (::1) 4.71ms
-[W 180605 00:30:48 web:2106] 404 GET /api/house/index (::1) 3.77ms
-[W 180605 00:30:48 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 2.36ms
-[I 180605 00:30:51 web:2106] 304 GET /static/js/ihome/login.js (::1) 2.03ms
-[I 180605 00:51:00 autoreload:196] /home/ace/PycharmProjects/ihome/handlers/Passport.py modified; restarting server
-[D 180605 00:51:00 selector_events:65] Using selector: EpollSelector
+      File "/home/ace/PycharmProjects/ihome/utils/commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "/home/ace/PycharmProjects/ihome/handlers/Profile.py", line 21, in get
+        avatar = config.qiniu_url + ret["up_avatar"]
+    TypeError: Can't convert 'NoneType' object to str implicitly
+[E 180605 23:04:22 web:2106] 500 GET /api/profile (::1) 5.82ms
+[I 180605 23:04:24 web:2106] 200 GET /myhouse.html (::1) 2.64ms
+[I 180605 23:04:24 web:2106] 200 GET /static/css/ihome/myhouse.css (::1) 8.00ms
+[I 180605 23:04:24 web:2106] 200 GET /static/js/ihome/myhouse.js (::1) 6.81ms
+[E 180605 23:04:24 torndb:236] Error connecting to MySQL on 127.0.0.1:3306
+[E 180605 23:04:24 Profile:78] (1054, "Unknown column 'up_id_card' in 'field list'")
+[I 180605 23:04:24 web:2106] 200 GET /api/profile/auth (::1) 7.17ms
+[E 180605 23:04:26 web:1621] Uncaught exception GET /api/profile (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/ace/PycharmProjects/ihome/utils/commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "/home/ace/PycharmProjects/ihome/handlers/Profile.py", line 21, in get
+        avatar = config.qiniu_url + ret["up_avatar"]
+    TypeError: Can't convert 'NoneType' object to str implicitly
+[E 180605 23:04:26 web:2106] 500 GET /api/profile (::1) 5.92ms
+[E 180605 23:04:28 torndb:236] Error connecting to MySQL on 127.0.0.1:3306
+[E 180605 23:04:28 Profile:78] (1054, "Unknown column 'up_id_card' in 'field list'")
+[I 180605 23:04:28 web:2106] 304 GET /api/profile/auth (::1) 2.50ms
+[E 180605 23:04:29 web:1621] Uncaught exception GET /api/profile (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/ace/PycharmProjects/ihome/utils/commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "/home/ace/PycharmProjects/ihome/handlers/Profile.py", line 21, in get
+        avatar = config.qiniu_url + ret["up_avatar"]
+    TypeError: Can't convert 'NoneType' object to str implicitly
+[E 180605 23:04:29 web:2106] 500 GET /api/profile (::1) 2.87ms
+[I 180605 23:04:30 web:2106] 200 GET /auth.html (::1) 33.15ms
+[I 180605 23:04:30 web:2106] 200 GET /static/js/ihome/auth.js (::1) 2.46ms
+[I 180605 23:04:30 web:2106] 304 GET /static/css/ihome/profile.css (::1) 1.08ms
+[I 180605 23:04:30 web:2106] 304 GET /static/js/jquery.form.min.js (::1) 1.55ms
+[E 180605 23:04:31 torndb:236] Error connecting to MySQL on 127.0.0.1:3306
+[E 180605 23:04:31 Profile:78] (1054, "Unknown column 'up_id_card' in 'field list'")
+[I 180605 23:04:31 web:2106] 304 GET /api/profile/auth (::1) 2.11ms
+[E 180605 23:04:33 web:1621] Uncaught exception GET /api/profile (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/ace/PycharmProjects/ihome/utils/commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "/home/ace/PycharmProjects/ihome/handlers/Profile.py", line 21, in get
+        avatar = config.qiniu_url + ret["up_avatar"]
+    TypeError: Can't convert 'NoneType' object to str implicitly
+[E 180605 23:04:33 web:2106] 500 GET /api/profile (::1) 4.44ms
+[I 180605 23:06:20 web:2106] 304 GET /my.html (::1) 1.12ms
+[E 180605 23:06:20 web:1621] Uncaught exception GET /api/profile (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/ace/PycharmProjects/ihome/utils/commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "/home/ace/PycharmProjects/ihome/handlers/Profile.py", line 21, in get
+        avatar = config.qiniu_url + ret["up_avatar"]
+    TypeError: Can't convert 'NoneType' object to str implicitly
+[E 180605 23:06:20 web:2106] 500 GET /api/profile (::1) 5.64ms
+[I 180605 23:08:15 web:2106] 304 GET /profile.html (::1) 18.44ms
+[I 180605 23:08:15 web:2106] 200 GET /static/js/ihome/profile.js (::1) 2.26ms
+[E 180605 23:08:15 web:1621] Uncaught exception GET /api/profile (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/ace/PycharmProjects/ihome/utils/commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "/home/ace/PycharmProjects/ihome/handlers/Profile.py", line 21, in get
+        avatar = config.qiniu_url + ret["up_avatar"]
+    TypeError: Can't convert 'NoneType' object to str implicitly
+[E 180605 23:08:15 web:2106] 500 GET /api/profile (::1) 8.29ms
+[E 180605 23:08:16 web:1621] Uncaught exception GET /api/profile (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/home/ace/.local/lib/python3.5/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/ace/PycharmProjects/ihome/utils/commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "/home/ace/PycharmProjects/ihome/handlers/Profile.py", line 21, in get
+        avatar = config.qiniu_url + ret["up_avatar"]
+    TypeError: Can't convert 'NoneType' object to str implicitly
+[E 180605 23:08:16 web:2106] 500 GET /api/profile (::1) 3.29ms
+[I 180605 23:11:01 autoreload:196] /home/ace/PycharmProjects/ihome/handlers/Profile.py modified; restarting server
+[D 180605 23:11:01 selector_events:65] Using selector: EpollSelector
+[I 180605 23:11:07 web:2106] 304 GET /my.html (::1) 4.82ms
+[I 180605 23:11:07 web:2106] 200 GET /api/profile (::1) 3.32ms
+[I 180605 23:11:34 autoreload:196] /home/ace/PycharmProjects/ihome/handlers/Profile.py modified; restarting server
+[D 180605 23:11:34 selector_events:65] Using selector: EpollSelector
+[E 180605 23:12:06 torndb:236] Error connecting to MySQL on 127.0.0.1:3306
+[E 180605 23:12:06 Profile:79] (1054, "Unknown column 'up_id_card' in 'field list'")
+[I 180605 23:12:06 web:2106] 304 GET /api/profile/auth (::1) 5.65ms
+[E 180605 23:12:17 torndb:236] Error connecting to MySQL on 127.0.0.1:3306
+[E 180605 23:12:17 Profile:99] (1054, "Unknown column 'up_id_card' in 'field list'")
+[I 180605 23:12:17 web:2106] 200 POST /api/profile/auth (::1) 5.69ms
+[I 180605 23:12:31 web:2106] 304 GET /auth.html (::1) 5.61ms
+[E 180605 23:12:32 torndb:236] Error connecting to MySQL on 127.0.0.1:3306
+[E 180605 23:12:32 Profile:79] (1054, "Unknown column 'up_id_card' in 'field list'")
+[I 180605 23:12:32 web:2106] 200 GET /api/profile/auth (::1) 5.01ms
+[I 180605 23:16:17 autoreload:196] /home/ace/PycharmProjects/ihome/handlers/Profile.py modified; restarting server
+[D 180605 23:16:18 selector_events:65] Using selector: EpollSelector
+[I 180605 23:16:18 web:2106] 304 GET /auth.html (::1) 5.24ms
+[E 180605 23:16:19 torndb:236] Error connecting to MySQL on 127.0.0.1:3306
+[E 180605 23:16:19 Profile:79] (1054, "Unknown column 'up_id_card' in 'field list'")
+[I 180605 23:16:19 web:2106] 304 GET /api/profile/auth (::1) 5.80ms
+[I 180605 23:18:28 autoreload:196] /home/ace/PycharmProjects/ihome/handlers/Profile.py modified; restarting server
+[D 180605 23:18:29 selector_events:65] Using selector: EpollSelector
+[I 180605 23:57:08 web:2106] 304 GET /auth.html (::1) 5.20ms
+[I 180605 23:57:08 web:2106] 200 GET /api/profile/auth (::1) 1.96ms
+[I 180605 23:57:18 web:2106] 200 POST /api/profile/auth (::1) 357.44ms
+[I 180605 23:57:29 web:2106] 200 GET /api/profile (::1) 2.16ms
+[I 180605 23:57:31 web:2106] 200 GET /api/profile/auth (::1) 1.42ms
+[I 180605 23:57:32 web:2106] 304 GET /api/profile (::1) 2.27ms
+[I 180605 23:57:33 web:2106] 304 GET /api/profile/auth (::1) 1.84ms
+[E 180605 23:57:33 torndb:236] Error connecting to MySQL on 127.0.0.1:3306
+[E 180605 23:57:33 House:54] (1054, "Unknown column 'a.hi_area' in 'on clause'")
+[I 180605 23:57:33 web:2106] 200 GET /api/house/my (::1) 11.79ms
+[I 180606 00:06:42 autoreload:196] /home/ace/PycharmProjects/ihome/handlers/House.py modified; restarting server
+[D 180606 00:06:43 selector_events:65] Using selector: EpollSelector
+[I 180606 00:07:45 web:2106] 304 GET /myhouse.html (::1) 5.48ms
+[I 180606 00:07:45 web:2106] 200 GET /api/profile/auth (::1) 4.33ms
+[I 180606 00:07:45 web:2106] 200 GET /api/house/my (::1) 4.39ms
+[I 180606 00:07:52 web:2106] 200 GET /newhouse.html (::1) 33.82ms
+[I 180606 00:07:52 web:2106] 200 GET /static/css/ihome/newhouse.css (::1) 7.33ms
+[I 180606 00:07:52 web:2106] 200 GET /static/js/ihome/newhouse.js (::1) 3.86ms
+[E 180606 00:07:52 House:17] 'NoneType' object has no attribute 'decode'
+[E 180606 00:07:52 House:39] MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[I 180606 00:07:52 web:2106] 200 GET /api/house/area (::1) 3.21ms
+[I 180606 00:07:59 web:2106] 304 GET /api/profile/auth (::1) 3.13ms
+[I 180606 00:07:59 web:2106] 304 GET /api/house/my (::1) 4.48ms
+[I 180606 00:08:00 web:2106] 200 GET /api/profile (::1) 6.28ms
+[I 180606 00:08:03 web:2106] 304 GET /api/profile/auth (::1) 3.90ms
+[I 180606 00:08:05 web:2106] 304 GET /api/profile (::1) 2.47ms
+[E 180606 00:08:07 session:50] MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[I 180606 00:08:07 web:2106] 200 GET /api/logout (::1) 4.27ms
+[I 180606 00:08:07 web:2106] 200 GET /api/check_login (::1) 1.29ms
+[W 180606 00:08:07 web:2106] 404 GET /api/house/index (::1) 3.52ms
+[W 180606 00:08:07 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.82ms
+[E 180606 00:08:19 session:43] MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[E 180606 00:08:19 Passport:58] MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[I 180606 00:08:19 web:2106] 200 POST /api/login (::1) 4.67ms
+[E 180606 00:08:22 session:43] MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[E 180606 00:08:22 Passport:58] MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[I 180606 00:08:22 web:2106] 200 POST /api/login (::1) 3.32ms
+[I 180606 00:10:38 autoreload:196] /home/ace/PycharmProjects/ihome/utils/session.py modified; restarting server
+[D 180606 00:10:38 selector_events:65] Using selector: EpollSelector
+[I 180606 00:12:06 autoreload:196] /home/ace/PycharmProjects/ihome/utils/session.py modified; restarting server
+[D 180606 00:12:06 selector_events:65] Using selector: EpollSelector
+[I 180606 00:12:12 web:2106] 304 GET /api/check_login (::1) 2.66ms
+[W 180606 00:12:12 web:2106] 404 GET /api/house/index (::1) 3.90ms
+[W 180606 00:12:12 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.32ms
+[I 180606 00:12:17 web:2106] 304 GET / (::1) 6.77ms
+[I 180606 00:12:17 web:2106] 304 GET /api/check_login (::1) 6.24ms
+[W 180606 00:12:17 web:2106] 404 GET /api/house/index (::1) 1.53ms
+[W 180606 00:12:17 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.19ms
+[E 180606 00:12:26 session:43] MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[E 180606 00:12:26 Passport:58] MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[I 180606 00:12:26 web:2106] 200 POST /api/login (::1) 4.80ms
+[I 180606 00:13:19 web:2106] 200 POST /api/login (::1) 3.37ms
+[I 180606 00:13:20 web:2106] 200 GET /api/check_login (::1) 2.12ms
+[W 180606 00:13:20 web:2106] 404 GET /api/house/index (::1) 2.57ms
+[W 180606 00:13:20 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 0.97ms
+[I 180606 00:13:22 web:2106] 200 GET /api/profile (::1) 1.92ms
+[I 180606 00:13:23 web:2106] 304 GET /api/logout (::1) 2.46ms
+[I 180606 00:13:23 web:2106] 200 GET /api/check_login (::1) 1.46ms
+[W 180606 00:13:23 web:2106] 404 GET /api/house/index (::1) 2.69ms
+[W 180606 00:13:23 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.70ms
+[I 180606 00:13:32 web:2106] 200 POST /api/login (::1) 3.46ms
+[I 180606 00:13:33 web:2106] 200 GET /api/check_login (::1) 1.20ms
+[W 180606 00:13:33 web:2106] 404 GET /api/house/index (::1) 2.09ms
+[W 180606 00:13:33 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 0.93ms
+[I 180606 00:13:38 web:2106] 304 GET /api/profile (::1) 2.06ms
+[I 180606 00:13:42 web:2106] 304 GET /api/profile (::1) 2.61ms
+[I 180606 00:13:48 web:2106] 200 POST /api/profile/name (::1) 138.16ms
+[I 180606 00:13:52 web:2106] 200 GET /api/profile (::1) 1.79ms
+[I 180606 00:13:53 web:2106] 304 GET /api/profile (::1) 2.10ms
+[E 180606 00:13:55 Profile:38] 'avatar'
+[I 180606 00:13:55 web:2106] 200 POST /api/profile/avatar (::1) 2.88ms
+[D 180606 00:14:56 connectionpool:824] Starting new HTTPS connection (1): uc.qbox.me
+[D 180606 00:14:56 connectionpool:396] https://uc.qbox.me:443 "GET /v1/query?ak=rdWcd00BBpTfqUoCBtubQ0qslneEZJ2a9EojN0ly&bucket=ihome HTTP/1.1" 200 259
+[D 180606 00:14:56 retry:200] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[D 180606 00:14:56 connectionpool:208] Starting new HTTP connection (1): up-z2.qiniu.com
+[D 180606 00:14:57 connectionpool:396] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 180606 00:14:57 web:2106] 200 POST /api/profile/avatar (::1) 838.55ms
+[I 180606 00:15:05 web:2106] 200 GET /api/profile (::1) 1.92ms
+[I 180606 00:15:07 web:2106] 304 GET /api/profile (::1) 2.74ms
+[I 180606 00:15:08 web:2106] 304 GET /api/profile (::1) 1.63ms
+[I 180606 00:19:29 web:2106] 200 GET /lorders.html (::1) 12.66ms
+[I 180606 00:19:29 web:2106] 200 GET /static/css/ihome/orders.css (::1) 2.40ms
+[I 180606 00:19:29 web:2106] 200 GET /static/js/ihome/lorders.js (::1) 8.04ms
+[W 180606 00:19:29 web:2106] 404 GET /api/order/my?role=landlord (::1) 1.45ms
+[I 180606 00:19:35 web:2106] 304 GET /api/profile (::1) 2.16ms
+[I 180606 00:19:39 web:2106] 304 GET /api/logout (::1) 1.21ms
+[I 180606 00:19:39 web:2106] 200 GET /api/check_login (::1) 1.57ms
+[W 180606 00:19:39 web:2106] 404 GET /api/house/index (::1) 1.60ms
+[W 180606 00:19:39 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.68ms
