@@ -46,7 +46,7 @@ class LoginHandler(BaseHandler):
         if not all((mobile, password)):
             return self.write(dict(errcode=RET.PARAMERR, msg=error_map.PARAMERR))
         res = self.db.get("select up_user_id,up_name,up_passwd from ih_user_profile where up_mobile=%(mobile)s", mobile=mobile)
-        password = hashlib.sha256((config.passwd_hash_key+password).encode("utf8")) .hexdigest()
+        password = hashlib.sha256((config.passwd_hash_key+password).encode("utf8")).hexdigest()
         if res and res["up_passwd"] == password:
             try:
                 self.session = Session(self)
@@ -56,6 +56,7 @@ class LoginHandler(BaseHandler):
                 self.session.save()
             except Exception as e:
                 logging.error(e)
+                return self.write(dict(errcode='4102', msg="登录失败"))
             return self.write(dict(errcode=RET.OK, msg="OK"))
         else:
             return self.write(dict(errcode='2', msg="手机号或密码错误"))

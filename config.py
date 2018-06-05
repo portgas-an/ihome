@@ -4,7 +4,7 @@ import os
 # Application配置文件
 setting = {
     "static_path": os.path.join(os.path.dirname(__file__), "static"),
-    "template_path": os.path.join(os.path.dirname(__file__), "html"),
+    "template_path": os.path.join(os.path.dirname(__file__), "template"),
     "cookie_secret": "lvP2jGfDTeKqm9oekT0LR+DBsSojQEYTp7ZJlKM79jo=",
     "xsrf_cookies": True,
     "debug": True,
