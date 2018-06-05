@@ -48,7 +48,7 @@ class MyHouseHandler(BaseHandler):
         user_id = self.session.data["user_id"]
         try:
             ret = self.db.query("select a.hi_house_id,a.hi_title,a.hi_price,a.hi_ctime,b.ai_name,a.hi_index_image_url "
-                                "from ih_house_info a left join ih_area_info b on a.hi_area_id=b.ai_area_id where "
+                                "from ih_house_info a left join ih_area_info b on a.hi_area=b.ai_area_id where "
                                 "a.hi_user_id=%s", user_id)
         except Exception as e:
             logging.error(e)

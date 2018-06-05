@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [D 180605 22:34:30 selector_events:65] Using selector: EpollSelector
 [I 180605 22:35:01 web:2106] 304 GET / (::1) 106.00ms
 [I 180605 22:35:01 web:2106] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (::1) 45.19ms
@@ -339,3 +340,5 @@
 [I 180606 00:19:39 web:2106] 200 GET /api/check_login (::1) 1.57ms
 [W 180606 00:19:39 web:2106] 404 GET /api/house/index (::1) 1.60ms
 [W 180606 00:19:39 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.68ms
+=======
+>>>>>>> e933f35537d55ce7a7e0efcb5fc3c45f1c9c1658
