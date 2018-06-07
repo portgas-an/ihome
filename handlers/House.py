@@ -8,8 +8,10 @@ import json
 from utils.commons import required_login
 import config
 
+
 class AreaInfoHandler(BaseHandler):
     """"""
+
     def get(self):
         try:
             ret = self.redis.get("area_info").decode('utf-8')
@@ -17,7 +19,7 @@ class AreaInfoHandler(BaseHandler):
             logging.error(e)
             ret = None
         if ret:
-           return self.write('{"errcode":%s ,"msg":"OK","data":%s}' % (RET.OK, ret))
+            return self.write('{"errcode":%s ,"msg":"OK","data":%s}' % (RET.OK, ret))
 
         try:
             ret = self.db.query("select ai_area_id,ai_name from ih_area_info")
@@ -28,9 +30,9 @@ class AreaInfoHandler(BaseHandler):
             return self.write(dict(errcode=RET.NODATA, msg="no area data"))
         areas = []
         for l in ret:
-            area ={
+            area = {
                 "area_id": l["ai_area_id"],
-                "name" : l["ai_name"]
+                "name": l["ai_name"]
             }
             areas.append(area)
         try:
