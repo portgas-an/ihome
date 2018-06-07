@@ -469,3 +469,61 @@
 [I 180606 22:48:42 web:2106] 200 GET /api/house/area (::1) 5.02ms
 [I 180606 22:48:43 web:2106] 200 GET /api/profile/auth (::1) 2.88ms
 [I 180606 22:48:43 web:2106] 200 GET /api/house/my (::1) 3.37ms
+[D 180607 14:12:38 selector_events:65] Using selector: SelectSelector
+[I 180607 14:12:55 web:2106] 304 GET /static/css/ihome/index.css (::1) 183.51ms
+[W 180607 14:12:55 web:2106] 404 GET /api/house/index (::1) 44.86ms
+[I 180607 14:12:55 web:2106] 200 GET /api/check_login (::1) 41.89ms
+[I 180607 14:13:02 web:2106] 200 POST /api/login (::1) 116.08ms
+[I 180607 14:13:02 web:2106] 200 GET /api/check_login (::1) 1.99ms
+[W 180607 14:13:02 web:2106] 404 GET /api/house/index (::1) 2.02ms
+[I 180607 14:13:03 web:2106] 304 GET /api/profile (::1) 2.99ms
+[I 180607 14:13:05 web:2106] 304 GET /api/profile/auth (::1) 0.99ms
+[I 180607 14:13:05 web:2106] 200 GET /api/house/my (::1) 84.78ms
+[I 180607 14:13:07 web:2106] 304 GET /api/profile (::1) 1.99ms
+[I 180607 14:13:10 web:2106] 304 GET /api/profile/auth (::1) 1.97ms
+[I 180607 14:13:10 web:2106] 304 GET /api/house/my (::1) 5.98ms
+[E 180607 14:13:11 House:19] 'NoneType' object has no attribute 'decode'
+[I 180607 14:13:11 web:2106] 304 GET /api/house/area (::1) 2.00ms
+[E 180607 14:15:33 House:124] (1264, "Out of range value for column 'hi_price' at row 1")
+[I 180607 14:15:33 web:2106] 200 POST /api/house/info (::1) 325.07ms
+[D 180607 14:15:45 House:165] insert into ih_house_facility(hf_house_id,hf_facility_id) values(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s)
+[D 180607 14:15:45 House:166] (1, '1', 1, '8', 1, '12', 1, '13', 1, '16', 1, '17', 1, '18', 1, '19')
+[I 180607 14:15:45 web:2106] 200 POST /api/house/info (::1) 386.55ms
+[W 180607 14:15:52 web:2106] 405 POST /api/house/image (::1) 0.99ms
+[I 180607 14:17:43 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180607 14:17:44 selector_events:65] Using selector: SelectSelector
+[I 180607 14:20:34 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180607 14:20:35 selector_events:65] Using selector: SelectSelector
+[I 180607 14:22:20 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180607 14:31:13 selector_events:65] Using selector: SelectSelector
+[I 180607 14:31:15 web:2106] 304 GET /newhouse.html (::1) 156.58ms
+[I 180607 14:31:15 web:2106] 200 GET /api/house/area (::1) 1.00ms
+[I 180607 14:31:23 web:2106] 304 GET /api/profile/auth (::1) 4.00ms
+[I 180607 14:31:23 web:2106] 200 GET /api/house/my (::1) 41.91ms
+[I 180607 14:31:24 web:2106] 200 GET /detail.html?id=1&f=my (::1) 45.88ms
+[I 180607 14:31:24 web:2106] 200 GET /static/css/ihome/detail.css (::1) 39.89ms
+[I 180607 14:31:24 web:2106] 200 GET /static/js/ihome/detail.js (::1) 28.92ms
+[I 180607 14:31:24 web:2106] 200 GET /api/house/info?house_id=1 (::1) 0.00ms
+[W 180607 14:31:24 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 1.99ms
+[I 180607 15:27:36 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180607 15:27:37 selector_events:65] Using selector: SelectSelector
+[I 180607 15:31:29 autoreload:196] F:\torna\handlers\House.py modified; restarting server
+[D 180607 15:31:30 selector_events:65] Using selector: SelectSelector
+[D 180607 15:31:53 selector_events:65] Using selector: SelectSelector
+[I 180607 15:31:57 web:2106] 304 GET / (::1) 170.84ms
+[W 180607 15:31:59 web:2106] 404 GET /api/house/index (::1) 1.00ms
+[I 180607 15:31:59 web:2106] 304 GET /api/check_login (::1) 1.06ms
+[I 180607 15:32:00 web:2106] 304 GET /api/profile (::1) 3.13ms
+[I 180607 15:32:02 web:2106] 304 GET /api/profile/auth (::1) 1.00ms
+[I 180607 15:32:05 web:2106] 200 GET /orders.html (::1) 52.06ms
+[I 180607 15:32:05 web:2106] 200 GET /static/css/ihome/orders.css (::1) 34.86ms
+[I 180607 15:32:05 web:2106] 200 GET /static/js/ihome/orders.js (::1) 24.65ms
+[W 180607 15:32:05 web:2106] 404 GET /api/order/my?role=custom (::1) 1.00ms
+[I 180607 15:32:10 web:2106] 304 GET /orders.html (::1) 1.00ms
+[W 180607 15:32:10 web:2106] 404 GET /api/order/my?role=custom (::1) 2.00ms
+[I 180607 15:32:12 web:2106] 200 GET /lorders.html (::1) 16.54ms
+[W 180607 15:32:12 web:2106] 404 GET /api/order/my?role=landlord (::1) 0.00ms
+[I 180607 15:32:14 web:2106] 304 GET /api/profile (::1) 1.36ms
+[I 180607 15:32:15 web:2106] 304 GET /api/profile/auth (::1) 0.73ms
+[I 180607 15:32:15 web:2106] 304 GET /api/house/my (::1) 1.99ms
+[I 180607 16:16:37 autoreload:196] F:\torna\handlers\House.py modified; restarting server

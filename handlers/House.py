@@ -7,7 +7,7 @@ import constants
 import json
 from utils.commons import required_login
 import config
-
+from utils.qiniu_storage import storage
 
 class AreaInfoHandler(BaseHandler):
     """"""
@@ -68,6 +68,31 @@ class MyHouseHandler(BaseHandler):
                 }
                 houses.append(house)
         return self.write(dict(errcode=RET.OK, msg="OK", houses=houses))
+
+
+class HouseImageHandler(BaseHandler):
+    @required_login
+    def post(self):
+        try:
+            house_id = self.get_argument("house_id")
+            house_image = self.request.files["house_image"][0]["body"]
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errcode=RET.DATAERR, msg="参数错误"))
+        image_url = storage(house_image)
+        if not image_url:
+            return self.write(dict(errcode=RET.THIRDERR, msg="七牛存储错误"))
+        try:
+            # 将上传的七牛图片地址存储到数据库里面去,用户的第一张图片作为房屋的封面
+            sql = "insert into ih_house_image(hi_house_id,hi_url) values(%s,%s);" \
+                  "update ih_house_info set hi_index_image_url=%s " \
+                  "where hi_house_id=%s and hi_index_image_url is null;"
+            self.db.execute(sql, house_id, image_url, image_url, house_id)
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errcode=RET.DBERR, msg="数据库错误"))
+        image_url = config.qiniu_url + image_url
+        self.write(dict(errcode=RET.OK, msg="OK", data=image_url))
 
 
 class HouseInfoHandler(BaseHandler):
@@ -169,3 +194,63 @@ class HouseInfoHandler(BaseHandler):
                 return self.write(dict(errcode=RET.DBERR, errmsg="no data save"))
         # 返回
         self.write(dict(errcode=RET.OK, errmsg="OK", house_id=house_id))
+
+
+class HouseList(BaseHandler):
+    """"""
+    def get(self):
+        start_date = self.get_argument("sd", "")
+        end_date = self.get_argument("ed", "")
+        area_id = self.get_argument("aid", "")
+        sort_key = self.get_argument("sk", "new")
+        page = self.get_argument("p", 1)
+        page = int(page)
+        # 参数校验
+        if not all(start_date,end_date,area_id,sort_key,page)
+            return self.write(dict(RET.PARAMERR, msg="参数错误"))
+        # 查询数据库
+        sql = "select * from ih_house_info left join ih_order_info on hi_house_id = oi_house_id inner join ih_user_profile on hi_user_id = up_user_id"
+        sql_where = []
+        sql_params = {}
+        if start_date and end_date:
+            sql_where.append("(not (oi_begin_date < %(end_date)s and oi_end_date > %(start_date)s))")
+            sql_params["start_date"] = start_date
+            sql_params["end_date"] = end_date
+        elif start_date:
+            sql_where.append("(oi_end_date < %(start_date)s)")
+            sql_params["start_date"] = start_date
+        elif end_date:
+            sql_where.append("(oi_begin_date < %(end_date)s)")
+            sql_params["end_date"] = end_date
+        if area_id:
+            sql_where.append("(hi_area_id = %(area_id)s)")
+            sql_params["area_id"] = area_id
+        if sql_where:
+            sql += "where"
+            sql += "and ".join(sql_where)
+        if "new" == sort_key:
+            sql += "order by hi_ctime desc"
+        elif "hot" == sort_key:
+            sql += "order by hi_order_count desc"
+        elif "pri-inc" == sort_key:
+            sql += "order by hi_price asc"
+        elif "pri-des" == sort_key:
+            sql += "order by hi_price desc"
+        sql += "limit %s,%s" % (page-1) * constants.HOUSE_LIST_PAGE_CAPACITY,constants.HOUSE_LIST_PAGE_CAPACITY
+        try:
+            ret = self.db.execute(sql, **sql_params)
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errcode=RET.DBERR, msg="查询出错"))
+        houses = []
+        if ret:
+            for i in ret:
+                house = {
+                    "house_id": i["hi_house_id"],
+                    "title": i["hi_title"],
+                    "price": i["hi_price"],
+                    "ctime": i["hi_ctime"].strftime("%Y-%m-%d"),
+                    "area_name": i["ai_name"],
+                    "img_url": config.qiniu_url + i["hi_index_image_url"] if i["hi_index_image_url"] else ""
+                }
+                houses.append(house)
