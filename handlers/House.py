@@ -8,6 +8,7 @@ import json
 from utils.commons import required_login
 import config
 from utils.qiniu_storage import storage
+import math
 
 class AreaInfoHandler(BaseHandler):
     """"""
@@ -209,7 +210,8 @@ class HouseList(BaseHandler):
         if not all(start_date,end_date,area_id,sort_key,page)
             return self.write(dict(RET.PARAMERR, msg="参数错误"))
         # 查询数据库
-        sql = "select * from ih_house_info left join ih_order_info on hi_house_id = oi_house_id inner join ih_user_profile on hi_user_id = up_user_id"
+        sql = "select distinct hi_house_id,hi_title,hi_price,hi_room_count,hi_order_count,hi_index_image_url,hi_address,up_avatar,hi_ctime,hi_order_count,hi_price" \
+              " from ih_house_info left join ih_order_info on hi_house_id = oi_house_id inner join ih_user_profile on hi_user_id = up_user_id"
         sql_where = []
         sql_params = {}
         if start_date and end_date:
@@ -236,9 +238,9 @@ class HouseList(BaseHandler):
             sql += "order by hi_price asc"
         elif "pri-des" == sort_key:
             sql += "order by hi_price desc"
-        sql += "limit %s,%s" % (page-1) * constants.HOUSE_LIST_PAGE_CAPACITY,constants.HOUSE_LIST_PAGE_CAPACITY
+        sql += "limit %s,%s" % ((page-1) * constants.HOUSE_LIST_PAGE_CAPACITY,constants.HOUSE_LIST_PAGE_CAPACITY)
         try:
-            ret = self.db.execute(sql, **sql_params)
+            ret = self.db.query(sql, **sql_params)
         except Exception as e:
             logging.error(e)
             return self.write(dict(errcode=RET.DBERR, msg="查询出错"))
@@ -254,3 +256,14 @@ class HouseList(BaseHandler):
                     "img_url": config.qiniu_url + i["hi_index_image_url"] if i["hi_index_image_url"] else ""
                 }
                 houses.append(house)
+        sql = "select count(*) counts from ih_house_info left join ih_order_info on hi_house_id = oi_house_id"
+        if sql_where:
+            sql += "where"
+            sql += "and".join(sql_where)
+        try:
+            ret = self.db.get(sql, **sql_params)
+        except Exception as e:
+            logging.error(e)
+            total_page = -1
+        else:
+            total_page = int(math.ceil(ret["counts"] / float(constants.HOUSE_LIST_PAGE_CAPACITY)))
