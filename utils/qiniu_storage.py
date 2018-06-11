@@ -33,13 +33,9 @@ def storage(file_data):
     except Exception as e:
         logging.error(e)
         raise e
-    print(ret)
-    print("*" * 16)
-    print(info)
     # assert ret['key'] == key
     # assert ret['hash'] == etag(localfile)
-    print(type(info))
-    print(info.status_code)
+
     if 200 == info.status_code:
         return ret["key"]
     else:

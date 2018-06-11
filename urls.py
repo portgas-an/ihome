@@ -21,6 +21,7 @@ urls = [
     (r'/api/house/my$', House.MyHouseHandler),
     (r'/api/house/info$', House.HouseInfoHandler),
     (r'/api/house/image$', House.HouseImageHandler),
+    (r'/api/house/list', House.HouseList),
     (r'^/(.*?)$', StaticFileHandler,
      dict(path=os.path.join(os.path.dirname(__file__), "html"), default_filename="index.html")),
 
