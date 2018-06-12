@@ -77,7 +77,6 @@ class HouseImageHandler(BaseHandler):
     def post(self):
         try:
             house_id = self.get_argument("house_id")
-            house_id = 2
             house_image = self.request.files["house_image"][0]["body"]
         except Exception as e:
             logging.error(e)
@@ -159,7 +158,7 @@ class HouseInfoHandler(BaseHandler):
         # 查询房屋基础设施
         sql = "select hf_facility_id from ih_house_facility where hf_house_id =%s"
         try:
-            ret = self.db.execute(sql,house_id)
+            ret = self.db.execute(sql, house_id)
         except Exception as e:
             logging.error(e)
             ret = None
@@ -172,7 +171,7 @@ class HouseInfoHandler(BaseHandler):
         sql = "select oi_comment,up_name,oi_utime,up_mobile from ih_order_info inner join ih_user_profile " \
               "on oi_user_id=up_user_id where oi_house_id=%s and oi_status=4 and oi_comment is not null"
         try:
-            ret = self.db.query(sql,house_id)
+            ret = self.db.query(sql, house_id)
         except Exception as e:
             logging.error(e)
             ret = None
@@ -373,3 +372,65 @@ class HouseList(BaseHandler):
         else:
             total_page = int(math.ceil(ret["counts"] / float(constants.HOUSE_LIST_PAGE_CAPACITY)))
         self.write(dict(errcode=RET.OK, msg="OK", data=cur_page_data, total_page=total_page))
+
+
+class IndexHandler(BaseHandler):
+    """主页信息"""
+
+    def get(self):
+        houses = []
+        try:
+            data = self.redis.get("home_page_data")
+        except Exception as e:
+            logging.error(e)
+            data = None
+        if data:
+            data = data.decode("utf-8")
+            houses = json.loads(data)
+        try:
+            ret = self.db.query("select hi_house_id, hi_title, hi_order_count, hi_index_image_url from ih_house_info "
+                                "order by hi_order_count desc limit %s " % constants.HOUSE_LIST_PAGE_CAPACITY)
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errcode=RET.DBERR, msg="数据库查询出错"))
+        if not ret:
+            return self.write(dict(errcode=RET.NODATA, msg="没有数据"))
+        for i in ret:
+            if not i["hi_index_image_url"]:
+                continue
+            houses.append(dict(
+                house_id=i["hi_house_id"],
+                title=i["hi_title"],
+                img_url=config.qiniu_url + i["hi_index_image_url"]
+            ))
+        json_data = json.dumps(houses)
+        try:
+            self.redis.setex("home_page_data", constants.REDIS_HOUSE_INFO_EXPIRES_SECONDES,json_data)
+        except Exception as e:
+            logging.error(e)
+        # 返回区域信息
+        areas = []
+        try:
+            ret = self.redis.get("area_info").decode('utf-8')
+        except Exception as e:
+            logging.error(e)
+            ret = None
+        if ret:
+            areas = ret
+        if not ret:
+            try:
+                area_ret = self.db.query("select ai_area_id,ai_name from ih_area_info")
+            except Exception as e:
+                logging.error(e)
+                area_ret = None
+            if area_ret:
+                for area in area_ret:
+                    areas.append(dict(
+                        area_id=area["ai_area_id"],
+                        name=area["ai_name"]
+                    ))
+            try:
+                self.redis.setex("area_info", constants.AREA_INFO_REDIS_EXPIRES_SECONDS, json.dumps(areas))
+            except Exception as e:
+                logging.error(e)
+        self.write(dict(errcode=RET.OK, msg="OK", houses=houses, areas=areas))

@@ -66,7 +66,7 @@ $(document).ready(function(){
                 if ("4101" == data.errcode) {
                     location.href = "/login.html";
                 } else if ("0" == data.errcode) {
-                    $(".house-image-cons").append('<img src="'+ data.url+'">');
+                    $(".house-image-cons").append('<img src="'+ data.data+'">');
                     $('.popup_con').fadeOut('fast');
                 }
             }

@@ -9,7 +9,7 @@ import config
 import torndb
 import redis
 
-define("port", type=int, default=8080, help="run server on the given port")
+define("port", type=int, default=8888, help="run server on the given port")
 
 
 class Application(tornado.web.Application):
