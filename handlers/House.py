@@ -387,27 +387,28 @@ class IndexHandler(BaseHandler):
         if data:
             data = data.decode("utf-8")
             houses = json.loads(data)
-        try:
-            ret = self.db.query("select hi_house_id, hi_title, hi_order_count, hi_index_image_url from ih_house_info "
-                                "order by hi_order_count desc limit %s " % constants.HOUSE_LIST_PAGE_CAPACITY)
-        except Exception as e:
-            logging.error(e)
-            return self.write(dict(errcode=RET.DBERR, msg="数据库查询出错"))
-        if not ret:
-            return self.write(dict(errcode=RET.NODATA, msg="没有数据"))
-        for i in ret:
-            if not i["hi_index_image_url"]:
-                continue
-            houses.append(dict(
-                house_id=i["hi_house_id"],
-                title=i["hi_title"],
-                img_url=config.qiniu_url + i["hi_index_image_url"]
-            ))
-        json_data = json.dumps(houses)
-        try:
-            self.redis.setex("home_page_data", constants.REDIS_HOUSE_INFO_EXPIRES_SECONDES,json_data)
-        except Exception as e:
-            logging.error(e)
+        if not data:
+            try:
+                ret = self.db.query("select hi_house_id, hi_title, hi_order_count, hi_index_image_url from ih_house_info "
+                                    "order by hi_order_count desc limit %s " % constants.HOUSE_LIST_PAGE_CAPACITY)
+            except Exception as e:
+                logging.error(e)
+                return self.write(dict(errcode=RET.DBERR, msg="数据库查询出错"))
+            if not ret:
+                return self.write(dict(errcode=RET.NODATA, msg="没有数据"))
+            for i in ret:
+                if not i["hi_index_image_url"]:
+                    continue
+                houses.append(dict(
+                    house_id=i["hi_house_id"],
+                    title=i["hi_title"],
+                    img_url=config.qiniu_url + i["hi_index_image_url"]
+                ))
+            json_data = json.dumps(houses)
+            try:
+                self.redis.setex("home_page_data", constants.REDIS_HOUSE_INFO_EXPIRES_SECONDES,json_data)
+            except Exception as e:
+                logging.error(e)
         # 返回区域信息
         areas = []
         try:
@@ -416,7 +417,7 @@ class IndexHandler(BaseHandler):
             logging.error(e)
             ret = None
         if ret:
-            areas = ret
+            areas = json.loads(ret)
         if not ret:
             try:
                 area_ret = self.db.query("select ai_area_id,ai_name from ih_area_info")
